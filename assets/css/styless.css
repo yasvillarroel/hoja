@@ -1,0 +1,76 @@
+:root{
+    --color1: rgb(17,212,218);
+    --color2: rgb(252,222,1);
+    --color3: rgb(239,129,10);
+    --color4: rgb(255,0,20);
+    --color5: rgb(52,52,52);
+    --color6: white;
+    --color7: rgb(193,184,184);
+    --color8: #5c5c5c;
+
+}
+
+/*resetea a todo el codigo que no tenga margenes*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body{
+    font-family: "Lato", sans-serif;
+}
+
+.padre{
+    display: flex;
+
+}
+/*columna izquierda*/
+.columna20{
+    width: 20%;
+    background-color: var(--color5);
+    padding: 20px;
+}
+.boton{
+    list-style: none;
+    color:var(--color7);
+    transition: .5s; /*quiere decir que la transición cambie en 0,5 segundos*/
+    background-color: var(--color8);
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.boton:hover{
+    color: var(--color6);
+    -webkit-box-shadow: 10px 10px 31px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 31px -7px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 31px -7px rgba(0,0,0,0.75);
+}
+/*columna derecha*/
+.columna80{
+    width: 80%;
+}
+
+.caja{
+    height: 25vh;/*25% de la altura de la ventana*/
+}
+
+.caja1{
+    background-color: var(--color1);
+}
+
+.caja2{
+    background-color: var(--color2);
+}
+
+.caja3{
+    background-color: var(--color3);
+}
+
+.caja4{
+    background-color: var(--color4);
+}
